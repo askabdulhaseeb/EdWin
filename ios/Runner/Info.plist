@@ -47,5 +47,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- Mine -->
+	<key>NSCameraUsageDescription</key>
+	<string>EdWin use your device's camera to do things such as help you to live</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>This lets you share the videos, photos, and voice while going live and adding your products.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>EdWin needs your photo library access to upload the photos and videos</string>
 </dict>
 </plist>
