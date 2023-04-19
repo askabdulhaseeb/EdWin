@@ -12,4 +12,8 @@ class AppImages {
   static const String profileQRcode = 'assets/images/profile-qr-code.png';
   static const String undrawSocial = 'assets/images/undraw_social.png';
   static const String work = 'assets/images/work.png';
+  static const String chatCall = 'assets/images/chat-call.png';
+
+  static const String demmyVideoURL =
+      'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4';
 }
