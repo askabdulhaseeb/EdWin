@@ -9,6 +9,10 @@ class AppUser {
   final String profileURL;
   final String coverURL;
   final String phoneNumber;
+  final String facebookURL;
+  final String instaURL;
+  final String twitterURL;
+  final String websiteURL;
 
   AppUser({
     this.uid = '1122',
@@ -21,5 +25,9 @@ class AppUser {
     this.coverURL =
         'https://cdn.pixabay.com/photo/2023/04/10/10/26/animal-7913402_1280.jpg',
     this.phoneNumber = '+92 345 1021122',
+    this.facebookURL = 'https://www.facebook.com/rana.abdulhaseeb.5',
+    this.instaURL = 'https://www.instagram.com/r_abdulhaseeb',
+    this.twitterURL = 'https://twitter.com/RanaAbdulHase14',
+    this.websiteURL = 'https://devmarkaz.com',
   }) : type = type ?? UserType.appDeveloper;
 }

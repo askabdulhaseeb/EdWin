@@ -18,6 +18,9 @@ class AppImages {
   static const String undrawSocial = 'assets/images/undraw_social.png';
   static const String work = 'assets/images/work.png';
   static const String chatCall = 'assets/images/chat-call.png';
+  static const String circularPlayButton = 'assets/images/circular-play-button.png';
+  static const String premiumcircularPlayButton = 'assets/images/premium-play-button.png';
+  static const String premiumBadge = 'assets/images/premium-badge.png';
 
   static const String demmyVideoURL =
       'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4';
