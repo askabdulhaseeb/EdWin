@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../models/app_user.dart';
+import '../../views/user_screens/profile_screen.dart';
 import '../core/circular_image.dart';
 
 class HomeVideoUserAndMusicInfoWidget extends StatelessWidget {
@@ -29,14 +30,23 @@ class HomeVideoUserAndMusicInfoWidget extends StatelessWidget {
           children: <Widget>[
             Row(
               children: <Widget>[
-                Container(
-                  height: 80,
-                  width: 80,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    border: Border.all(width: 4, color: Colors.white),
-                    image: DecorationImage(
-                      image: NetworkImage(user.profileURL),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute<ProfileScreen>(
+                        builder: (context) => ProfileScreen(uid: user.uid),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    height: 80,
+                    width: 80,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(width: 4, color: Colors.white),
+                      image: DecorationImage(
+                        image: NetworkImage(user.profileURL),
+                      ),
                     ),
                   ),
                 ),

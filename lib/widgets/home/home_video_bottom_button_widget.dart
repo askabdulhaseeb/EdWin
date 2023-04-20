@@ -1,3 +1,4 @@
+import 'package:edwin/views/user_screens/profile_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../custom_icons_icons.dart';
@@ -102,12 +103,24 @@ class HomeVideoBottomButtonsWidget extends StatelessWidget {
                 ),
                 const SizedBox(width: 6),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute<ProfileScreen>(
+                        builder: (context) => ProfileScreen(uid: user.uid),
+                      ),
+                    );
+                  },
                   splashRadius: 16,
                   icon: CircularImage(imageURL: user.profileURL),
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute<ProfileScreen>(
+                        builder: (context) => ProfileScreen(uid: user.uid),
+                      ),
+                    );
+                  },
                   splashRadius: 16,
                   icon: CircularImage(imageURL: user.profileURL),
                 ),

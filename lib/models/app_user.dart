@@ -7,6 +7,7 @@ class AppUser {
   final String username;
   final String email;
   final String profileURL;
+  final String coverURL;
   final String phoneNumber;
 
   AppUser({
@@ -17,6 +18,8 @@ class AppUser {
     this.email = 'askabdulhaseeb@gmail.com',
     this.profileURL =
         'https://i.pinimg.com/280x280_RS/a8/a8/11/a8a811ac9358279b6b34e8fd4c42d8ce.jpg',
+    this.coverURL =
+        'https://cdn.pixabay.com/photo/2023/04/10/10/26/animal-7913402_1280.jpg',
     this.phoneNumber = '+92 345 1021122',
   }) : type = type ?? UserType.appDeveloper;
 }
