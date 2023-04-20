@@ -28,6 +28,7 @@ class _NetworkVideoPlayerState extends State<NetworkVideoPlayer> {
       controller.setVolume(widget.isMute ? 0 : 1);
       setState(() {});
     });
+    controller.setLooping(true);
     super.initState();
   }
 
