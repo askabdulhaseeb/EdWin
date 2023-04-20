@@ -19,7 +19,7 @@ class HomeVideoBottomButtonsWidget extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(42),
               gradient: LinearGradient(
@@ -32,38 +32,75 @@ class HomeVideoBottomButtonsWidget extends StatelessWidget {
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                IconButton(
-                  onPressed: () {},
-                  splashRadius: 16,
-                  icon: const Icon(
-                    CustomIcons.heart,
-                    color: Colors.white,
+                const SizedBox(width: 16),
+                Column(
+                  children: <Widget>[
+                    GestureDetector(
+                      onTap: () {},
+                      child: const Icon(
+                        CustomIcons.heart,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      '22K',
+                      style: TextStyle(fontSize: 8, color: Colors.white),
+                    )
+                  ],
+                ),
+                const SizedBox(width: 16),
+                GestureDetector(
+                  onTap: () {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        CustomIcons.comment,
+                        color: Colors.white,
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        '2.3K',
+                        style: TextStyle(fontSize: 8, color: Colors.white),
+                      ),
+                    ],
                   ),
                 ),
-                IconButton(
-                  onPressed: () {},
-                  splashRadius: 16,
-                  icon: const Icon(
-                    CustomIcons.comment,
-                    color: Colors.white,
+                const SizedBox(width: 16),
+                GestureDetector(
+                  onTap: () {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        CustomIcons.shareto,
+                        color: Colors.white,
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        '5.3M',
+                        style: TextStyle(fontSize: 8, color: Colors.white),
+                      ),
+                    ],
                   ),
                 ),
-                IconButton(
-                  onPressed: () {},
-                  splashRadius: 16,
-                  icon: const Icon(
-                    CustomIcons.shareto,
-                    color: Colors.white,
+                const SizedBox(width: 16),
+                GestureDetector(
+                  onTap: () {},
+                  child: Column(
+                    children: const [
+                      Icon(
+                        CustomIcons.bookmark,
+                        color: Colors.white,
+                      ),
+                      SizedBox(height: 4),
+                      Text(
+                        '100K',
+                        style: TextStyle(fontSize: 8, color: Colors.white),
+                      ),
+                    ],
                   ),
                 ),
-                IconButton(
-                  onPressed: () {},
-                  splashRadius: 16,
-                  icon: const Icon(
-                    CustomIcons.bookmark,
-                    color: Colors.white,
-                  ),
-                ),
+                const SizedBox(width: 6),
                 IconButton(
                   onPressed: () {},
                   splashRadius: 16,

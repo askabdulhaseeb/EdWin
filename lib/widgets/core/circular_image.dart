@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class CircularImage extends StatelessWidget {
   const CircularImage({
     required this.imageURL,
-    this.size = 28,
+    this.size = 32,
     this.placeholder = 'NA',
     super.key,
   });
@@ -17,6 +17,7 @@ class CircularImage extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
+        border: Border.all(color: Colors.white, width: 1),
         image: DecorationImage(
           image: NetworkImage(imageURL),
         ),
