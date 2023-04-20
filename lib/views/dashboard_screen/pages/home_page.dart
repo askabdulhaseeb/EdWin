@@ -42,9 +42,8 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
-        leading: SizedBox(
-          height: 44,
-          width: 44,
+        leading: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           child: Image.asset(AppImages.plus),
         ),
         title: SizedBox(height: 44, child: Image.asset(AppImages.logo)),
